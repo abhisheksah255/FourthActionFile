@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Get code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
       - name: Cache dependencies
         uses: actions/cache@v4
         with:
@@ -27,7 +27,7 @@ jobs:
       script_file: ${{ steps.publish.outputs.output_file }}
     steps:
       - name: Get code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
       - name: Cache dependencies
         uses: actions/cache@v4
         with:
